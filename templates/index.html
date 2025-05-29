@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance System</title>
+</head>
+<body>
+  <h1>Attendance System</h1>
 
+  <h2>Register Student</h2>
+  <input type="text" id="first_name" placeholder="First Name">
+  <input type="text" id="last_name" placeholder="Last Name">
+  <input type="email" id="parent_email" placeholder="Parent Email">
+  <button onclick="registerStudent()">Register</button>
+
+  <h2>Create Class Session</h2>
+  <input type="text" id="class_name" placeholder="Class Name">
+  <button onclick="createSession()">Create Session</button>
+
+  <h2>Mark Attendance</h2>
+  <input type="number" id="student_id_attend" placeholder="Student ID">
+  <input type="number" id="session_id_attend" placeholder="Session ID">
+  <select id="attended">
+    <option value="true">Present</option>
+    <option value="false">Absent</option>
+  </select>
+  <button onclick="markAttendance()">Submit Attendance</button>
+
+  <h2>Get Attendance Report</h2>
+  <input type="number" id="student_id_report" placeholder="Student ID">
+  <button onclick="getReport()">Get Report</button>
+  <pre id="report_output"></pre>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
